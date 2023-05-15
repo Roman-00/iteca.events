@@ -1,0 +1,58 @@
+@import '@splidejs/react-splide/css';
+
+.splide {
+    &__track {
+        padding: 8px 0;
+    }
+
+    &__arrows {
+        @media (max-width: 1260px) {
+            position: absolute;
+            top: 5%;
+            left: calc(100% - 10%);
+            margin-right: 24px;
+            transform: translateY(-5%);
+        }
+
+        @media (max-width: 920px) {
+            left: calc(100% - 18%);
+        }
+
+        @media (max-width: 640px) {
+            top: 3%;
+            transform: translateY(-3%);
+        }
+
+        @media (max-width: 420px) {
+            left: calc(100% - 24%)
+        }
+    }
+
+    &__arrow {
+        background: $white;
+        box-shadow: 0 2px 5px rgba($black-primary, 0.3);
+        transition: box-shadow 0.3s ease;
+
+        svg {
+            fill: $orange-primary;
+        }
+
+        &--prev {
+            left: -4rem;
+
+            @media (max-width: 525px) {
+                left: -1rem;
+            }
+        }
+
+        &--next {
+            right: -4rem;
+        }
+
+        @media (min-width: $mobile-breakpoint) {
+            &:hover {
+                box-shadow: none;
+            }
+        }
+    }
+}

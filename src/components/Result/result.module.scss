@@ -1,0 +1,46 @@
+@import "@/styles/variables.scss";
+
+.result {
+    position: relative;
+    margin: 60px 0;
+
+    @media (max-width: $mobile-breakpoint) {
+        margin: 30px 0;
+    }
+
+    .result-list {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        gap: 24px 0;
+
+        &__item {
+            flex: 1 1 256px;
+        }
+
+        &__item-title {
+            margin-bottom: 16px;
+            font-size: 16px;
+            font-weight: $f-weight-bold;
+            line-height: 24px;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        &__item-count {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            min-height: 56px;
+            font-size: 24px;
+            font-weight: $f-weight-bold;
+            line-height: 36px;
+            border-left: 1px solid $orange-primary;
+            color: $orange-primary;
+            text-align: center;
+        }
+    }
+}

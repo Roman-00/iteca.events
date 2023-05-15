@@ -1,11 +1,12 @@
 const { i18n } = require('./next-i18next.config');
+const withSvgr = require('next-plugin-svgr');
 
 /**
  * Конфигурация приложения
  *
  * @type {import('next').NextConfig}
  */
-module.exports = {
+module.exports = withSvgr({
     i18n,
     reactStrictMode: true,
     poweredByHeader: false,
@@ -13,4 +14,4 @@ module.exports = {
         APP_URL: process.env.APP_URL,
         APP_ENV: process.env.MODE
     }
-};
+})
