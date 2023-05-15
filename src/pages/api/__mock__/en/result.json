@@ -1,0 +1,26 @@
+[
+    {
+        "id": "exhibitions",
+        "title": "Exhibitions 2022",
+        "currentValue": 0,
+        "targetValue": 26
+    },
+    {
+        "id": "sqm",
+        "title": "Sqm м<sup>2</sup>",
+        "currentValue": 0,
+        "targetValue": 46658
+    },
+    {
+        "id": "exhibitors",
+        "title": "Exhibitors",
+        "currentValue": 0,
+        "targetValue": 2355
+    },
+    {
+        "id": "visitors",
+        "title": "Visitors",
+        "currentValue": 0,
+        "targetValue": 47367
+    }
+]

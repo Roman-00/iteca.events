@@ -1,0 +1,56 @@
+[
+    {
+        "id": "build",
+        "label": "Строительство и инженерное оборудование",
+        "link": "/exhibitions/build",
+        "industry": "Travel_Tourism"
+    },
+    {
+        "id": "power",
+        "label": "Энергетическое и электрическое оборудование",
+        "link": "/exhibitions/power",
+        "industry": "Travel_Tourism"
+    },
+    {
+        "id": "healthcare",
+        "label": "Здравоохранение и фармацевтическая промышленность",
+        "link": "/exhibitions/healthcare",
+        "industry": "Travel_Tourism"
+    },
+    {
+        "id": "mining",
+        "label": "Горнодобывающая промышленность",
+        "link": "/exhibitions/mining",
+        "industry": "Travel_Tourism"
+    },
+    {
+        "id": "travel",
+        "label": "Туризм и путешествия",
+        "link": "/exhibitions/travel",
+        "industry": "Travel_Tourism"
+    },
+    {
+        "id": "food",
+        "label": "Пищевая индустрия и гостеприимство",
+        "link": "/exhibitions/food",
+        "industry": "Travel_Tourism"
+    },
+    {
+        "id": "secures",
+        "label": "Охрана и безопасность",
+        "link": "/exhibitions/secures",
+        "industry": "Travel_Tourism"
+    },
+    {
+        "id": "oilgas",
+        "label": "Нефть и газ",
+        "link": "/exhibitions/oilgas",
+        "industry": "Travel_Tourism"
+    },
+    {
+        "id": "transit",
+        "label": "Транспорт и логистика",
+        "link": "/exhibitions/transit",
+        "industry": "Travel_Tourism"
+    }
+]

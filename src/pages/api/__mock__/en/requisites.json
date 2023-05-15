@@ -1,0 +1,37 @@
+[
+    {
+        "id": "bin",
+        "label": "bin",
+        "value": "960140001199"
+    },
+    {
+        "id": "kbe",
+        "label": "kbe",
+        "value": "17"
+    },
+    {
+        "id": "knp",
+        "label": "knp",
+        "value": "859"
+    },
+    {
+        "id": "iik",
+        "label": "iik",
+        "value": "KZ1883201T0250001029"
+    },
+    {
+        "id": "bank",
+        "label": "bank",
+        "value": "Citibank Kazakhstan JSC, Almaty, 050010, Kazybek Bi st., 41A"
+    },
+    {
+        "id": "bik",
+        "label": "bik",
+        "value": "CITIKZKAVAT"
+    },
+    {
+        "id": "certificate",
+        "label": "certificate",
+        "value": "series 60001 No.0044508 dated September 18, 2012"
+    }
+]

@@ -1,0 +1,3 @@
+type AboutParagraphType = {
+    text: string
+}
