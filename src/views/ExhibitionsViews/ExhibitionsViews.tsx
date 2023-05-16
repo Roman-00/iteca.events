@@ -5,7 +5,7 @@ import { ExhibitionsList } from '@/components/Exhibitions/ExhibitionsList';
 
 import styles from './exhibitions.module.scss';
 
-export const ExhibitionsViews: FC = () => {
+export const ExhibitionsViews: FC<{ data: ExhibitionsItemType[] }> = ({ data }) => {
     const { t } = useTranslation('exhibitions');
 
     return (
@@ -16,7 +16,9 @@ export const ExhibitionsViews: FC = () => {
                     dangerouslySetInnerHTML={{ __html: t('title') || '' }}
                 />
 
-                <ExhibitionsList />
+                <ExhibitionsList
+                    list={data}
+                />
             </div>
         </div>
     )
