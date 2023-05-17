@@ -1,14 +1,12 @@
-import React, { FC } from 'react';
+import { FC } from 'react';
 import { useTranslation } from 'next-i18next';
 import cn from 'classnames';
-import Image from 'next/image';
-import { MaterialIcon } from '@/components/ui/MaterialIcon';
-
-import HeroBannerImg from '@/assets/images/hero-banner.jpeg';
+import { contacts } from '@/constants/contacts';
+import { MaterialIcon } from '@/components/MaterialIcon';
 
 import styles from './banner.module.scss';
 
-export const Banner: FC = () => {
+const Banner: FC = () => {
     const { t } = useTranslation('banner');
 
     return (
@@ -28,19 +26,21 @@ export const Banner: FC = () => {
                 </p>
 
                 <a
-                    href=""
-                    target="_blank"
+                    href={contacts.CONTACTS_EMAIL_LINK}
                     className={cn({
                         'animate__animated animate__delay-2s animate__fadeInUp': true,
-                    }, styles['banner__contact-us-btn'])}
+                    }, styles['banner__link'])}
+                    target="_blank"
                 >
                     <MaterialIcon
                         name="MdEmail"
                     />
 
-                    { t('button') }
+                    { t('link') }
                 </a>
             </div>
         </div>
     );
 };
+
+export default Banner;

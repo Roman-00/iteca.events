@@ -1,0 +1,60 @@
+@import "@/styles/variables.scss";
+
+.lang-select {
+    margin-left: 16px;
+    cursor: pointer;
+
+    @media (max-width: 920px) {
+        margin-left: auto;
+    }
+
+    &__selected {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 140px;
+        height: 40px;
+        font-size: 14px;
+        font-weight: $f-weight-regular;
+        line-height: 24px;
+        background: $white;
+    }
+
+    &__selected-img {
+        margin-right: 8px;
+    }
+
+    &__options {
+        position: absolute;
+        right: 0;
+        width: 100%;
+        max-width: 180px;
+        background: $white;
+        box-shadow: 0 4px 5px rgba($black-primary, 0.15);
+    }
+
+    &__option {
+        display: flex;
+        align-items: center;
+        padding: 8px 16px;
+        font-size: 14px;
+        font-weight: $f-weight-regular;
+        line-height: 24px;
+        border-bottom: 1px solid rgba($gray-lightest, 0.3);
+        transition: margin-left 0.3s ease;
+
+        &:last-of-type {
+            border-bottom: none;
+        }
+
+        @media (min-width: $mobile-breakpoint) {
+            &:hover {
+                margin-left: 16px;
+            }
+        }
+    }
+
+    &__option-img {
+        margin-right: 8px;
+    }
+}

@@ -1,8 +1,6 @@
 import {configureStore, getDefaultMiddleware } from '@reduxjs/toolkit';
 import { createWrapper } from 'next-redux-wrapper';
 
-import { counterSlice  } from '@/store/module/counter';
-
 const middleware = getDefaultMiddleware({
     serializableCheck: false,
 });
@@ -11,9 +9,7 @@ const middleware = getDefaultMiddleware({
  * Глобальное хранилище для приложения
  */
 export const store = configureStore({
-    reducer: {
-        counter: counterSlice.reducer,
-    },
+    reducer:  {},
     middleware,
     devTools: process.env.MODE === 'development',
 });

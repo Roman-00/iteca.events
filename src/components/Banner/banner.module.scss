@@ -5,7 +5,7 @@
     display: flex;
     align-items: center;
     min-height: 525px;
-    background: $gray-light url('../../assets/images/hero-banner.jpeg') no-repeat top center / cover;
+    background: $gray-lightest url('../../assets/images/hero-banner.jpeg') no-repeat top center / cover;
 
     &::before {
         content: '';
@@ -15,7 +15,6 @@
         width: 100%;
         height: 100%;
         background: rgba($white, 0.6);
-        z-index: 0;
     }
 
     &__title {
@@ -24,20 +23,9 @@
         font-size: 34px;
         font-weight: $f-weight-bold;
         line-height: 56px;
-        color: $black-primary;
 
         span {
             color: $orange-primary;
-        }
-
-        @media (max-width: 476px) {
-            font-size: 24px;
-            line-height: 36px;
-        }
-
-        @media (max-width: 375px) {
-            font-size: 18px;
-            line-height: 28px;
         }
     }
 
@@ -47,59 +35,32 @@
         font-size: 16px;
         font-weight: $f-weight-regular;
         line-height: 24px;
-
-        @media (max-width: 375px) {
-            font-size: 14px;
-        }
     }
 
-    &__contact-us-btn {
+    &__link {
         display: flex;
         align-items: center;
         justify-content: center;
         width: 100%;
-        max-width: 180px;
-        min-height: 40px;
+        max-width: 200px;
+        min-height: 42px;
         font-size: 16px;
         font-weight: $f-weight-regular;
         line-height: 24px;
         text-decoration: none;
         background: $orange-primary;
-        box-shadow: 0 2px 5px rgba($orange-primary, 0.6);
+        box-shadow: 0 2px 5px rgba($black-primary, 0.3);
         color: $white;
         transition: box-shadow 0.3s ease;
 
         svg {
             margin-right: 8px;
-            font-size: 18px;
         }
 
-        @media (min-width: $mobile-breakpoint) {
+        @media (min-height: $mobile-breakpoint) {
             &:hover {
                 box-shadow: none;
             }
-        }
-    }
-
-    &__image {
-        position: relative;
-        height: 100%;
-        min-height: 525px;
-
-        img {
-            object-fit: cover;
-            object-position: 50% 15%;
-        }
-
-        &::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba($white, 0.6);
-            z-index: 1;
         }
     }
 }

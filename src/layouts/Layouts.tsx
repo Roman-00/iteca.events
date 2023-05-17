@@ -1,22 +1,15 @@
 import React, { FC, PropsWithChildren } from 'react';
-import { Banner } from '@/components/Banner/Banner';
-import { SkeletonLoader } from '@/components/ui/Skeleton';
+import Header from '@/components/Header/Header';
+import Banner from '@/components/Banner/Banner';
 
 import styles from './layouts.module.scss';
 
 const Layouts: FC<PropsWithChildren<unknown>> = ({ children }) => {
-    const [isLoading, setIsLoading] = React.useState<boolean>(false);
-
-    React.useEffect(() => {
-        setIsLoading(true);
-    }, []);
-
     return (
         <>
-            {isLoading
-                ? <Banner />
-                : <SkeletonLoader count={1} height={525} />
-            }
+            <Header />
+
+            <Banner />
 
             <div className={styles['layouts-content']}>
                 { children }

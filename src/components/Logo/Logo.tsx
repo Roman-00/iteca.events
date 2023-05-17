@@ -9,18 +9,20 @@ export const Logo: FC = () => {
     const { t } = useTranslation('common');
 
     return (
-        <Link
-            href='/'
-            className={styles['logo-link']}
-        >
-            <Image
-                src="/logo.svg"
-                alt={t('title')}
-                width={140}
-                height={70}
-                draggable={false}
-                priority={true}
-            />
-        </Link>
+        <div className={styles.logo}>
+            <Link
+                href="/"
+                className={styles['logo-link']}
+            >
+                <Image
+                    src="/logo.svg"
+                    alt={t('title')}
+                    width={140}
+                    height={70}
+                    quality={75}
+                    loading="lazy"
+                />
+            </Link>
+        </div>
     );
 };
