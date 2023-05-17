@@ -1,22 +1,24 @@
-@import "@/styles/_variables.scss";
+@import "@/styles/variables.scss";
 
 .top-bar {
     position: relative;
     display: flex;
     align-items: center;
-    height: 40px;
+    min-height: 40px;
     background: $gray-light;
 
-    @media (min-width: $mobile-breakpoint) {
-        &::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -25px;
-            width: 25px;
-            height: 100%;
-            background: $gray-light;
-            clip-path: polygon(0 0, 100% 0%, 100% 100%, 100% 100%);
-        }
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -24px;
+        width: 24px;
+        height: 100%;
+        background: $gray-light;
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 100% 100%);
+    }
+
+    @media (max-width: $mobile-breakpoint) {
+        display: none;
     }
 }

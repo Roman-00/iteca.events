@@ -1,0 +1,38 @@
+@import "@/styles/variables.scss";
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0;
+    margin: 20px 0 0;
+    list-style: none;
+
+    &__item {
+        margin-left: 16px;
+        font-size: 14px;
+        font-weight: $f-weight-semi-bold;
+        line-height: 24px;
+        text-transform: uppercase;
+        color: $black-primary;
+
+        @media (min-width: $mobile-breakpoint) {
+            &:hover &-link {
+                color: $orange-primary;
+            }
+        }
+    }
+
+    &__item-link {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: $black-primary;
+        cursor: pointer;
+        transition: color 0.3s ease;
+
+        svg {
+            margin-left: 8px;
+        }
+    }
+}

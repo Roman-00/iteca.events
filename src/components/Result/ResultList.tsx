@@ -1,9 +1,11 @@
 import React, { FC } from 'react';
+import { useTranslation } from 'next-i18next';
 import CountUp from 'react-countup';
 
 import styles from './result.module.scss';
 
 export const ResultList: FC<{ list: ResultItemType[] }> = ({ list }) => {
+    const { t } = useTranslation('result');
     const [numbers, setNumbers] = React.useState<ResultItemType[]>(list);
 
     React.useEffect(() => {
@@ -35,7 +37,7 @@ export const ResultList: FC<{ list: ResultItemType[] }> = ({ list }) => {
                 >
                     <h3
                         className={styles['result-list__item-title']}
-                        dangerouslySetInnerHTML={{ __html: item.title || '' }}
+                        dangerouslySetInnerHTML={{ __html: t(`${item.id}`) || '' }}
                     />
 
                     <CountUp

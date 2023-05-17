@@ -1,0 +1,67 @@
+@import "@/styles/variables.scss";
+@import "@/styles/mixins.scss";
+
+.footer-contacts {
+    &__title {
+        margin-bottom: 28px;
+        font-size: 24px;
+        font-weight: $f-weight-semi-bold;
+        line-height: 36px;
+        color: $white;
+    }
+
+    &__address {
+        max-width: 320px;
+        margin-bottom: 16px;
+        font-size: 16px;
+        font-weight: $f-weight-regular;
+        line-height: 24px;
+        color: $white;
+    }
+
+    &__map {
+        @include reset-button;
+
+        display: flex;
+        align-items: center;
+        margin-bottom: 8px;
+        font-size: 16px;
+        font-weight: $f-weight-regular;
+        line-height: 24px;
+        color: $white;
+        transition: color 0.3s ease;
+
+        svg {
+            margin-right: 8px;
+        }
+
+        @media (min-width: $mobile-breakpoint) {
+            &:hover {
+                color: $gray-darker;
+            }
+        }
+    }
+
+    &__phone,
+    &__email {
+        display: flex;
+        align-items: center;
+        margin-bottom: 8px;
+        font-size: 16px;
+        font-weight: $f-weight-regular;
+        line-height: 24px;
+        text-decoration: none;
+        color: $white;
+        transition: color 0.3s ease;
+
+        svg {
+            margin-right: 8px;
+        }
+
+        @media (min-width: $mobile-breakpoint) {
+            &:hover {
+                color: $gray-darker;
+            }
+        }
+    }
+}

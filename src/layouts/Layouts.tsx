@@ -1,4 +1,6 @@
 import React, { FC, PropsWithChildren } from 'react';
+import Header from '@/components/Header/Header';
+import Footer from '@/components/Footer/Footer';
 import { Banner } from '@/components/Banner/Banner';
 import { SkeletonLoader } from '@/components/ui/Skeleton';
 
@@ -13,6 +15,8 @@ const Layouts: FC<PropsWithChildren<unknown>> = ({ children }) => {
 
     return (
         <>
+            <Header />
+
             {isLoading
                 ? <Banner />
                 : <SkeletonLoader count={1} height={525} />
@@ -21,6 +25,8 @@ const Layouts: FC<PropsWithChildren<unknown>> = ({ children }) => {
             <div className={styles['layouts-content']}>
                 { children }
             </div>
+
+            <Footer/>
         </>
     )
 };

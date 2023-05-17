@@ -3,25 +3,25 @@
         "id": "build",
         "label": "Construction and Engineering Equipment",
         "link": "/exhibitions/build",
-        "industry": "Travel_Tourism"
+        "industry": "Building_Interiors"
     },
     {
         "id": "power",
         "label": "Energy and Electrical Equipment",
         "link": "/exhibitions/power",
-        "industry": "Travel_Tourism"
+        "industry": "Energy_Electrical_Equipment"
     },
     {
         "id": "healthcare",
         "label": "Healthcare & Pharmaceutical Industry",
         "link": "/exhibitions/healthcare",
-        "industry": "Travel_Tourism"
+        "industry": "Heat_VentEcology"
     },
     {
         "id": "mining",
         "label": "Mining Industry",
         "link": "/exhibitions/mining",
-        "industry": "Travel_Tourism"
+        "industry": "Mining_Industry"
     },
     {
         "id": "travel",
@@ -33,24 +33,24 @@
         "id": "food",
         "label": "Food Industry and Hospitality",
         "link": "/exhibitions/food",
-        "industry": "Travel_Tourism"
+        "industry": "Food_Pack"
     },
     {
         "id": "secures",
         "label": "Security and Safety",
         "link": "/exhibitions/secures",
-        "industry": "Travel_Tourism"
+        "industry": "Security_Safety"
     },
     {
         "id": "oilgas",
         "label": "Oil and Gas",
         "link": "/exhibitions/oilgas",
-        "industry": "Travel_Tourism"
+        "industry": "OilGas"
     },
     {
         "id": "transit",
         "label": "Transport and Logistic",
         "link": "/exhibitions/transit",
-        "industry": "Travel_Tourism"
+        "industry": "Transport_Logistics"
     }
 ]
