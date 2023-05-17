@@ -17,7 +17,7 @@ export const ExhibitionsList: FC<{ list: ExhibitionsItemType[] }> = ({ list }) =
                     className={styles['exhibitions-list__item']}
                 >
                     <Link
-                        href={`${item.link}&id=${item.id}&lang=${router.locale}`}
+                        href={`${item.link}&id=${item.id}&lang=${router.locale}&industry=${item.industry}`}
                         className={styles['exhibitions-list__item-link']}
                     >
                         <div className={styles['exhibitions-list__item-images']}>

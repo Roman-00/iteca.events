@@ -1,0 +1,32 @@
+@import "@/styles/variables.scss";
+
+.sub-menu {
+    position: absolute;
+    width: 100%;
+    max-width: 220px;
+    margin: 12px 0;
+    padding: 0;
+    list-style: none;
+    border: 1px solid rgba($black-primary, 0.08);
+    background: $white;
+    box-shadow: 0 4px 5px rgba($black-primary, 0.15);
+
+    &__item {
+        padding: 8px 16px;
+        font-weight: $f-weight-regular;
+        text-transform: none;
+        border-bottom: 1px solid rgba($gray-lightest, 0.3);
+
+        @media (min-width: $mobile-breakpoint) {
+            &:hover &-link {
+                color: $orange-primary;
+            }
+        }
+    }
+
+    &__item-link {
+        text-decoration: none;
+        color: $black-primary;
+        transition: color 0.3s ease;
+    }
+}
