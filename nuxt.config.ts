@@ -9,8 +9,12 @@ export default defineNuxtConfig({
             charset:  'utf-8',
             viewport: 'width=device-width, initial-scale=1.0, maximum-scale=1.0',
             title:    'Iteca Events',
-            link:     [],
-            meta:     [
+            link:     [
+                { rel: 'icon', href: '/favicon.ico', sizes: 'any' },
+                { rel: 'apple-touch-icon', href: '/apple-touch-icon.png' },
+                { rel: 'manifest', href: '/manifest.webmanifest' }
+            ],
+            meta: [
                 {
                     name:    'theme-color',
                     content: '#fefefe'
@@ -42,6 +46,7 @@ export default defineNuxtConfig({
     modules: [
         '@nuxtjs/i18n',
         '@nuxtjs/device',
+        '@nuxt/image-edge'
     ],
     i18n: {
         locales: [
