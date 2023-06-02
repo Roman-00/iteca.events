@@ -1,18 +1,22 @@
+require('@rushstack/eslint-patch/modern-module-resolution');
+
 module.exports = {
     root: true,
     env: {
         node: true,
     },
     extends: [
-        'next/core-web-vitals',
+        'plugin:vue/vue3-essential',
+        '@vue/typescript/recommended',
     ],
+    parser: 'vue-eslint-parser',
     parserOptions: {
         tsconfigRootDir: __dirname,
-        ecmaVersion: 2022,
+        ecmaVersion: 2020,
     },
     rules: {
-        'no-console':   process.env.NODE_ENV === 'production' ? 'warn' : 'off',
-        'no-debugger':  process.env.NODE_ENV === 'production' ? 'warn' : 'off',
+        'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
+        'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
         'indent': ['error', 4],
         'quotes': ['error', 'single'],
         'key-spacing': [
@@ -20,6 +24,12 @@ module.exports = {
             {
                 'align': 'value'
             }
+        ],
+        'vue/max-attributes-per-line': [
+            'error',
+            {
+                singleline: 1,
+            },
         ],
     },
     overrides: [
@@ -41,4 +51,8 @@ module.exports = {
             },
         },
     ],
-}
+    globals: {
+        defineProps: 'readonly',
+        defineEmits: 'readonly',
+    },
+};

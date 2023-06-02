@@ -1,0 +1,54 @@
+/* Colors Variables */
+$black-primary: #1c1819;
+$orange-primary: #d0531d;
+$yellow-primary: #ffdd61;
+$blue-primary: #2a81dd;
+$text-primary: $black-primary;
+$gray-darker: #414247;
+$gray-lighter: #bbbec9;
+$gray-lightest: #d4d4da;
+$gray-light: #a1abad;
+$white-darkest: #f2f2f3;
+$white-darker: #fafafa;
+$yellow-darker: #ffc726;
+$yellow-lightest: #fde8a3;
+$blue-darkest: #00458a;
+$blue-darker: #06c;
+$blue-light: #34a2e9;
+$blue-lighter: #d6ecfb;
+$green-darker: #36a300;
+$payed-red: #ffeaea;
+$payed-green: #eff8eb;
+$payed-blue: #e9f2fb;
+$payed-yellow: #fffae7;
+$black: #000;
+$gray: #888b94;
+$white: #fff;
+$yellow: #ffd313;
+$red: #f33;
+$green: #64bd38;
+$orange: #f73;
+$white-gradient: linear-gradient(180deg, $white 0%, $white-darker 100%);
+$yellow-gradient: linear-gradient(180deg, $yellow-primary 0%, $yellow 100%);
+$blue-gradient: linear-gradient(180deg, $blue-primary 0%, #146fcf 100%);
+$red-gradient: linear-gradient(180deg, $red 0%, #e90b0b 100%);
+$green-gradient: linear-gradient(180deg, $green 0%, #45a815 100%);
+$orange-gradient: linear-gradient(180deg, $orange 0%, #ff6316 100%);
+
+// $gray-light: #a1a9ac;
+
+// Font Weight Variables
+$f-weight-regular: 400;
+$f-weight-semi-bold: 600;
+$f-weight-bold: 700;
+
+// Border Radius Variables
+$border-radius-base: 4px;
+$border-radius-medium: 8px;
+$border-radius-large: 16px;
+
+// Breakpoints Variables
+$mobile-breakpoint: 768px;
+$mobile-min-width: 320px;
+$layout-max-width: 1170px;
+$font-family-base: 'Open Sans', arial, sans-serif;
