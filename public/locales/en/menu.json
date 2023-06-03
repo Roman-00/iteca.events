@@ -1,11 +1,11 @@
 {
-    "menu": {
-        "about": "About Us",
-        "exhibition": "Events",
-        "media-center": "Media Center",
-        "contact": "Contacts",
-        "about-company": "Our company",
-        "partners": "Partners",
-        "career": "Career"
-    }
+  "menu": {
+    "about": "About Us",
+    "exhibition": "Events",
+    "media-center": "Media Center",
+    "contact": "Contacts",
+    "about-company": "Our company",
+    "partners": "Partners",
+    "career": "Career"
+  }
 }

@@ -1,33 +1,26 @@
-## Frontend Iteca.Events
-
-Для более подробной информации смотреть [Документацию NextJS](https://nextjs.org/docs)
+# Frontend Iteca.Events
+Для более подробной информации смотреть [документацию Nuxt 3](https://nuxt.com/docs/getting-started/introduction).
 
 ## Настройка проекта
-_______
-
-1. Установка yarn
-2. Установка зависимомтей
-
+1. Установите [pnpm](https://pnpm.io/installation)
+2. Установите зависимости проекта:
+```bash
+pnpm i
 ```
-yarn install
-```
+3. Создайте дубликат .env.development и переименуйте его в .env
 
-3. Создайте копию .env.development и переименуйте его в .env
-
-## Запуск dev проекта
-
-```
-yarn dev
+## Запуск проекта
+### Запуск dev сервера:
+```bash
+pnpm dev
 ```
 
-4. Собрать production сборку
-
+### Собрать production build:
+```bash
+pnpm build
 ```
-yarn build
-```
 
-5. Посмотреть локально production build
-
-```
-yarn start
+### Посмотреть локально production build:
+```bash
+pnpm preview
 ```

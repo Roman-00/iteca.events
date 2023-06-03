@@ -1,3 +1,0 @@
-type CounterType = {
-    value: number
-};

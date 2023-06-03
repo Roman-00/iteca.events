@@ -25,19 +25,11 @@ module.exports = {
     overrides: [
         {
             files: [
-                '**/*.{ts,tsx,vue}',
+                '**/*.{ts,tsx}',
             ],
             rules: {
                 'no-undef':             'off',
                 'import/no-unresolved': 'off',
-            },
-        },
-        {
-            files: [
-                '**/*.vue',
-            ],
-            rules: {
-                'vue/multi-word-component-names': 'off',
             },
         },
     ],

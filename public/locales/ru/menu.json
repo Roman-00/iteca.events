@@ -1,11 +1,11 @@
 {
-    "menu": {
-        "about": "О нас",
-        "exhibition": "Выставки и конфренции",
-        "media-center": "Медиацентр",
-        "contact": "Контакты",
-        "about-company": "Наша компания",
-        "partners": "Партнеры",
-        "career": "Карьера"
-    }
+  "menu": {
+    "about": "О нас",
+    "exhibition": "Выставки и конфренции",
+    "media-center": "Медиацентр",
+    "contact": "Контакты",
+    "about-company": "Наша компания",
+    "partners": "Партнеры",
+    "career": "Карьера"
+  }
 }
