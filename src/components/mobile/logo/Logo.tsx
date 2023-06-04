@@ -1,7 +1,7 @@
 import { FC } from 'react';
-import { useTranslation } from 'next-i18next';
 import Link from 'next/link';
 import Image from 'next/image';
+import { useTranslation } from 'next-i18next';
 
 import styles from './logo.module.scss';
 
@@ -16,8 +16,8 @@ export const Logo: FC = () => {
             <Image
                 src="/logo.svg"
                 alt={t('title')}
-                width={140}
-                height={70}
+                width={160}
+                height={60}
                 className={styles['logo-link__img']}
             />
         </Link>

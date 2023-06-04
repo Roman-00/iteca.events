@@ -1,5 +1,5 @@
 import React, { FC, PropsWithChildren } from 'react';
-import Header from '@/components/header/Header';
+import Header from '@/components/mobile/header/Header';
 
 const Layouts: FC<PropsWithChildren<unknown>> = ({ children }) => {
     return <>

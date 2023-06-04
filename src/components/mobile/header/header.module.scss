@@ -1,0 +1,42 @@
+@import "@/styles/_variables.scss";
+@import "@/styles/_mixins.scss";
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  min-height: 120px;
+  background: $white;
+
+  @media (max-width: $mobile-breakpoint) {
+    min-height: 80px;
+  }
+
+  &__btn-mb-menu {
+    @include reset-button;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 44px;
+    padding: 0 24px;
+    font-size: 16px;
+    font-weight: $f-weight-regular;
+    line-height: 24px;
+    border-radius: $border-radius-base;
+    background: $orange-primary;
+    color: $white;
+  }
+
+  &__mb-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &--active {
+    box-shadow: 0 2px 5px rgba($black-primary, 0.15);
+  }
+}

@@ -48,16 +48,24 @@ figure {
   padding: 0;
 }
 
+main {
+  padding-top: 120px;
+
+  @media (max-width: $mobile-breakpoint) {
+    padding-top: 80px;
+  }
+}
+
 .container {
   position: relative;
   width: 100%;
   max-width: $layout-max-width;
   margin: 0 auto;
   padding: 0 24px;
-}
 
-.header--active {
-  box-shadow: 0 2px 10px rgba($black-primary, 0.15);
+  @media (max-width: $mobile-breakpoint) {
+    padding: 0 16px;
+  }
 }
 
 .mobile-only {

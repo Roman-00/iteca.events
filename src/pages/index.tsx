@@ -21,8 +21,8 @@ const Index: FC = () => {
 
     return (
         <Meta
-            title={t('title')}
-            description={t('description')}
+            title={t('title') || ''}
+            description={t('description') || ''}
         >
             <IndexViews />
         </Meta>
