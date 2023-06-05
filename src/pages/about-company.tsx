@@ -5,7 +5,7 @@ import { AboutParagraphType } from '@/typings/about';
 import Meta from '@/components/Meta';
 import AboutViews from '@/views/AboutViews/AboutViews';
 
-export const getStaticProps = async ({ locale }: { locale: string }) => {
+export const getServerSideProps = async ({ locale }: { locale: string }) => {
     const res = await fetch(`${process.env.APP_URL}/api/about/${locale}`);
 
     const data = await res.json();
@@ -21,7 +21,7 @@ export const getStaticProps = async ({ locale }: { locale: string }) => {
                 'about',
                 'footer'
             ]))
-        }
+        },
     };
 };
 

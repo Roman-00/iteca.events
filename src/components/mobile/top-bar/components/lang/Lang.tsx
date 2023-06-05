@@ -43,7 +43,6 @@ export const TopBarLang: FC = () => {
             onOpen={() => setIsOpen(true)}
             onClose={() => setIsOpen(false)}
             width="target"
-            classNames={styles['top-bar-lang']}
             withinPortal
         >
             <Menu.Target>

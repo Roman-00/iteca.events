@@ -31,7 +31,8 @@ export const getStaticProps = async ({ locale }: { locale: string }) => {
                 'upcoming',
                 'footer'
             ])),
-        }
+        },
+        revalidate: 60,
     }
 }
 

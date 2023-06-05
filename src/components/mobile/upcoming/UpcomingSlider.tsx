@@ -1,7 +1,7 @@
 import { FC } from 'react';
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import { EventItemType } from '@/typings/event';
-import { EventCard } from '@/components/ui/card/EventCard';
+import { EventCard } from '@/components/Ui/card/EventCard';
 
 import styles from './upcoming.module.scss';
 

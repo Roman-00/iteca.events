@@ -29,10 +29,9 @@ export const MenuNav: FC = () => {
             return (
                 <Menu
                     key={link.id}
-                    trigger="click"
+                    trigger="hover"
                     transitionProps={{ exitDuration: 0 }}
                     withinPortal
-                    classNames={styles['menu-nav']}
                 >
                     <Menu.Target>
                         <Link
