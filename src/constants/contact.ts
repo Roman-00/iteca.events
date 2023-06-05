@@ -17,21 +17,21 @@ export const socialList: SocialItemType[] = [
     {
         id:   'facebook',
         icon: 'BiLogoFacebook',
-        link: 'https://facebook.com'
+        link: 'https://www.facebook.com/itecaevents'
     },
     {
         id:   'youtube',
         icon: 'BiLogoYoutube',
-        link: 'https://youtube.com'
+        link: 'https://www.youtube.com/user/ITECAAlmaty'
     },
     {
         id:   'linkedin',
         icon: 'BiLogoLinkedin',
-        link: 'https://linkedin.com'
+        link: 'https://www.linkedin.com/company/iteca'
     },
     {
         id:   'instagram',
         icon: 'BiLogoInstagram',
-        link: 'https://instagram.com'
+        link: 'https://www.instagram.com/iteca.events/'
     }
 ];

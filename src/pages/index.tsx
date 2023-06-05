@@ -28,6 +28,7 @@ export const getStaticProps = async ({ locale }: { locale: string }) => {
                 'meta',
                 'menu',
                 'result',
+                'upcoming',
                 'footer'
             ])),
         }
@@ -40,7 +41,6 @@ const Index: FC<{ upcomingData: EventResponseType }> = ({ upcomingData }) => {
     return (
         <Meta
             title={t('title') || ''}
-            description={t('description') || ''}
         >
             <IndexViews
                 upcoming={upcomingData.confList}

@@ -3,7 +3,10 @@ import Image from 'next/image';
 import dayjs from 'dayjs';
 import { getImages } from '@/helpers/image';
 import { EventItemType } from '@/typings/event';
-import { MaterialIcon } from '@/components/ui/MaterialIcon';
+
+import { FaRegCalendarAlt } from 'react-icons/fa';
+import { FaSearchLocation } from 'react-icons/fa';
+import { FaAngleDoubleRight } from 'react-icons/fa';
 
 import 'dayjs/locale/ru';
 import 'dayjs/locale/en';
@@ -54,13 +57,13 @@ export const EventCard: FC<{ item: EventItemType }> = ({ item }) => {
                 </h3>
 
                 <p className={styles['event-card__date']}>
-                    <MaterialIcon name="MdCalendarMonth" />
+                    <FaRegCalendarAlt />
 
                     { formateDate(item.beginDate, item.endDate) }
                 </p>
 
                 <p className={styles['event-card__location']}>
-                    <MaterialIcon name="MdLocationOn" />
+                    <FaSearchLocation />
 
                     { item.address }
                 </p>
@@ -74,7 +77,7 @@ export const EventCard: FC<{ item: EventItemType }> = ({ item }) => {
                     className={styles['event-card__btn']}
                 >
                     <span className={styles['event-card__btn-icon']}>
-                        <MaterialIcon name="MdKeyboardDoubleArrowRight" />
+                        <FaAngleDoubleRight />
                     </span>
 
                     Подробнее
