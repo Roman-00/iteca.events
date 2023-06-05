@@ -2,6 +2,7 @@ $black-primary: #1c1819;
 $orange-primary: #d0531d;
 $yellow-primary: #ffdd61;
 $blue-primary: #2a81dd;
+$gray-primary: #a1a9ac;
 
 $text-primary: $black-primary;
 
@@ -42,8 +43,6 @@ $blue-gradient: linear-gradient(180deg, $blue-primary 0%, #146fcf 100%);
 $red-gradient: linear-gradient(180deg, $red 0%, #e90b0b 100%);
 $green-gradient: linear-gradient(180deg, $green 0%, #45a815 100%);
 $orange-gradient: linear-gradient(180deg, $orange 0%, #ff6316 100%);
-
-// $gray-light: #a1a9ac;
 
 $f-weight-regular: 400;
 $f-weight-semi-bold: 600;

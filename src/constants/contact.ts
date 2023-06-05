@@ -1,35 +1,37 @@
+import type { SocialItemType } from '@/typings/social';
+
 /**
  * Храним данные по контактам в константах
  */
-export const contacts = {
-    CONTACTS_EMAIL:      'contact@iteca.events',
-    CONTACTS_EMAIL_LINK: 'mailto:contact@iteca.events',
-    CONTACTS_PHONE:      '+7 727 258-34-34',
-    CONTACTS_PHONE_LINK: 'tel:77272583434',
+export const contact = {
+    EMAIL:      'contact@iteca.events',
+    EMAIL_LINK: 'mailto:contact@iteca.events',
+    PHONE:      '+7 727 258-34-34',
+    PHONE_LINK: 'tel:77272583434',
 };
 
 /**
  * Храним данные о социальных сетях для сайта
  */
-export const social = [
+export const socialList: SocialItemType[] = [
     {
         id:   'facebook',
-        icon: 'facebook',
+        icon: 'BiLogoFacebook',
         link: 'https://facebook.com'
     },
     {
         id:   'youtube',
-        icon: 'youtube',
+        icon: 'BiLogoYoutube',
         link: 'https://youtube.com'
     },
     {
         id:   'linkedin',
-        icon: 'linkedin',
+        icon: 'BiLogoLinkedin',
         link: 'https://linkedin.com'
     },
     {
         id:   'instagram',
-        icon: 'instagram',
+        icon: 'BiLogoInstagram',
         link: 'https://instagram.com'
     }
 ];

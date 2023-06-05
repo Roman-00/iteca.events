@@ -1,0 +1,16 @@
+@import "@/styles/_variables.scss";
+
+.footer {
+  padding: 60px 0;
+  background: $gray-primary;
+
+  .footer-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+
+    div {
+      flex: 1 1 354px;
+    }
+  }
+}

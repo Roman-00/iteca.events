@@ -1,0 +1,45 @@
+@import "@/styles/_variables.scss";
+
+.footer-social {
+  position: relative;
+
+  &__title {
+    margin-bottom: 24px;
+    font-size: 24px;
+    font-weight: $f-weight-semi-bold;
+    line-height: 36px;
+    color: $white;
+  }
+
+  .footer-social-list {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    &__item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 24px;
+      height: 24px;
+      margin-right: 16px;
+    }
+
+    &__item-link {
+      font-size: 18px;
+      font-weight: $f-weight-regular;
+      line-height: 28px;
+      text-decoration: none;
+      color: $white;
+      transition: color 0.3s ease;
+
+      @media (min-width: $mobile-breakpoint) {
+        &:hover {
+          color: $gray-darker;
+        }
+      }
+    }
+  }
+}

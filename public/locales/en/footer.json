@@ -1,0 +1,18 @@
+{
+  "contact": {
+    "title": "Contacts",
+    "address": "8th floor, C block, 42к10, Timiryazev Str., Almaty, Kazakhstan",
+    "map": "Office on the map"
+  },
+  "useful-link": {
+    "title": "Useful links",
+    "faq": "Faq",
+    "exhi-rules": "B2B Exhibition attendance rules",
+    "exhi-advice": "Advice for exhibitors",
+    "entry-regime": "Visa Regime for Entry to Kazakhstan",
+    "privacy-policy": "Privacy policy"
+  },
+  "social": {
+    "title": "Follow us"
+  }
+}

@@ -1,0 +1,36 @@
+@import "@/styles/_variables.scss";
+
+.footer-useful-link {
+  position: relative;
+
+  &__title {
+    margin-bottom: 24px;
+    font-size: 24px;
+    font-weight: $f-weight-semi-bold;
+    line-height: 36px;
+    color: $white;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__list-item-link {
+    display: inline-block;
+    margin-bottom: 16px;
+    font-size: 16px;
+    font-weight: $f-weight-regular;
+    line-height: 24px;
+    text-decoration: none;
+    color: $white;
+    transition: color 0.3s ease;
+
+    @media (min-width: $mobile-breakpoint) {
+      &:hover {
+        color: $gray-darker;
+      }
+    }
+  }
+}

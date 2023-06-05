@@ -1,12 +1,13 @@
 @import "@/styles/_variables.scss";
 
-.logo-link {
-  display: inline-block;
+.logo {
+  padding-top: 24px;
 
-  &__img {
-    @media screen {
-      width: 80px;
-      height: 80px;
-    }
+  @media (max-width: $mobile-breakpoint) {
+    padding-top: 0;
+  }
+
+  &__link {
+    display: inline-block;
   }
 }

@@ -1,0 +1,57 @@
+@import "@/styles/_variables.scss";
+
+.upcoming {
+  margin-bottom: 60px;
+
+  @media (max-width: $mobile-breakpoint) {
+    margin-bottom: 30px;
+  }
+
+  &__title {
+    position: relative;
+    margin-bottom: 24px;
+    padding-left: 16px;
+    font-size: 34px;
+    font-weight: $f-weight-semi-bold;
+    line-height: 56px;
+    color: $black-primary;
+
+    span {
+      color: $orange-primary;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 2px;
+      background: $orange-primary;
+    }
+  }
+
+  &__btn-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 240px;
+    min-height: 44px;
+    margin: 30px auto 0;
+    font-size: 16px;
+    font-weight: $f-weight-regular;
+    line-height: 24px;
+    text-decoration: none;
+    background: $orange-primary;
+    box-shadow: 0 2px 5px rgba($orange-primary, 0.5);
+    color: $white;
+    transition: box-shadow 0.3s ease;
+
+    @media (min-width: $mobile-breakpoint) {
+      &:hover {
+        box-shadow: none;
+      }
+    }
+  }
+}

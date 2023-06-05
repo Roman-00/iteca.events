@@ -1,0 +1,33 @@
+@import "@/styles/_variables.scss";
+
+.top-bar-lang {
+  &__ui-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 144px;
+    min-height: 40px;
+    margin-left: 16px;
+    font-size: 14px;
+    font-weight: $f-weight-regular;
+    line-height: 24px;
+    border: none;
+    background: $white;
+  }
+
+  &__dropdown {
+    box-shadow: 0 2px 10px rgba($black-primary, 0.15);
+  }
+
+  &__dropdown-item {
+    transition: color 0.3s ease, margin-left 0.3s ease;
+    background: none;
+  }
+
+  &__dropdown-item:hover {
+    margin-left: 8px;
+    background: none;
+    color: $orange-primary;
+  }
+}

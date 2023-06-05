@@ -1,0 +1,26 @@
+@import "@/styles/_variables.scss";
+
+.top-bar-contacts {
+  position: relative;
+
+  &__link {
+    display: inline-block;
+    margin-left: 16px;
+    font-size: 14px;
+    font-weight: $f-weight-regular;
+    line-height: 20px;
+    text-decoration: none;
+    color: $white;
+    transition: color 0.3s ease;
+
+    svg {
+      margin-right: 8px;
+    }
+
+    @media (min-width: $mobile-breakpoint) {
+      &:hover {
+        color: $gray-darker;
+      }
+    }
+  }
+}

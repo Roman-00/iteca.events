@@ -1,0 +1,16 @@
+.menu-btn {
+  @include reset-button;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 0 24px;
+  font-size: 16px;
+  font-weight: $f-weight-regular;
+  line-height: 24px;
+  border-radius: $border-radius-base;
+  background: $orange-primary;
+  box-shadow: 0 2px 5px rgba($orange-primary, 0.15);
+  color: $white;
+}

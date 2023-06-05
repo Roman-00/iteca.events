@@ -1,4 +1,6 @@
-export const menu = [
+import type { MenuItemType } from '@/typings/menu';
+
+export const menu: MenuItemType[] = [
     {
         id:    'about',
         label: 'menu.about',

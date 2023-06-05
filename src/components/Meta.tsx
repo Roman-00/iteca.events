@@ -1,6 +1,7 @@
 import { FC, PropsWithChildren } from 'react';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
+import type { MetaType } from '@/typings/meta';
 
 const Meta: FC<PropsWithChildren<MetaType>> = (
     { title, description, image, children }
