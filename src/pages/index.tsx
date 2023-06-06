@@ -4,7 +4,7 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { API_KEY } from '@/constants/config';
 import { EventResponseType } from '@/typings/event';
 import Meta from '@/components/Meta';
-import IndexViews from '@/views/IndexViews';
+import IndexViews from '@/views/IndexViews/IndexViews';
 
 export const getStaticProps = async ({ locale }: { locale: string }) => {
     const upcoming = await fetch(`${process.env.API_URL}/exh-json/`, {

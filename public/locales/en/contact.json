@@ -1,0 +1,16 @@
+{
+  "title": "Contacts",
+  "address": "Address",
+  "index": "Index",
+  "phone": "Phone",
+  "email": "Email",
+  "web": "Web",
+  "Requisites": "Requisites",
+  "bin": "BIN",
+  "kbe": "Beneficiary Code",
+  "knp": "Payment Purpose Code",
+  "iik": "IIC",
+  "bank": "Bank",
+  "bik": "BIC",
+  "certificate": "Registration certificate"
+}

@@ -1,0 +1,15 @@
+@import "@/styles/variables.scss";
+
+.contacts {
+  &__item {
+    max-width: 375px;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: $f-weight-regular;
+    line-height: 24px;
+
+    span {
+      font-weight: $f-weight-semi-bold;
+    }
+  }
+}

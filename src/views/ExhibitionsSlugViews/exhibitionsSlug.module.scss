@@ -1,0 +1,9 @@
+@import "@/styles/variables.scss";
+
+.exhibitions-slug-views {
+    margin: 60px 0;
+
+    @media (min-width: $mobile-breakpoint) {
+        margin: 30px 0;
+    }
+}

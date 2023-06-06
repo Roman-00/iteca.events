@@ -6,8 +6,10 @@
  * @returns {Object}
  */
 export const getImages = (id: string, folder: string) => {
+    const trimmedId = id.replace(/\d+/g, '');
+
     return {
-        bw:    `/images/${folder}/${id}.jpg`,
-        hover: `/images/${folder}/${id}-hover.jpg`
+        bw:    `/images/${folder}/${trimmedId}.jpg`,
+        hover: `/images/${folder}/${trimmedId}-hover.jpg`
     };
 };

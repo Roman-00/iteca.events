@@ -24,9 +24,9 @@ export const menu: MenuItemType[] = [
         ]
     },
     {
-        id:    'exhibition',
+        id:    'exhibitions',
         label: 'menu.exhibition',
-        link:  'exhibition',
+        link:  'exhibitions',
     },
     {
         id:    'media-center',
