@@ -40,7 +40,7 @@ const Page: FC<{ data: EventResponseType }> = ({ data }) => {
 
     return (
         <Meta
-            title={t('title')}
+            title={t('title') || ''}
         >
             <ExhibitionsSlugViews
                 data={data}

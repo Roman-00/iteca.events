@@ -31,7 +31,7 @@ const Exhibitions: FC<{ data: ExhibitionsItemType[] }> = ({ data }) => {
 
     return (
         <Meta
-            title={t('title')}
+            title={t('title') || ''}
         >
             <ExhibitionsViews
                 data={data}
